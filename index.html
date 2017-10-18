@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>World Cities</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/javascript/app.js"></script>
+
+</head>
+<body>
+
+	<h1>Cities Around the World</h1>
+
+	<img src="assets/images/world.gif" id="selector" onclick="guess()"/>
+
+			<p id="click"> Click the Globe!</p>
+
+<div id = "game1">  
+
+			<div id = "clockTimer"></div>
+
+
+				<!--Questions and answers-->
+	<form id = "quiz" name = "quiz">
+
+		<p>1. Home of one of Germany's best football clubs called Borussia _____ (<b>BVB</b>), the city is also known as Westphalia's Grune Metropole "green metropolis".</p>
+			<input type="radio" id = "choice" name="question1" value="Munich"> Munich 
+	    	<input type="radio" id = "choice" name="question1" value="Berlin"> Berlin
+			<input type="radio" id = "choice" name="question1" value="Dortmund"> Dortmund
+			<input type="radio" id = "choice" name="question1" value="Monchengladbach"> Monchengladbach
+			<br>
+			<br>
+			<br>
+		<p>2. One of Russia's popular cities to visit, where The Kremlin, The Red Square and St. Basil's Cathedral stand tall showing its structure. </p>
+			<input type="radio" id = "choice" name="question2" value="Ufa"> Ufa
+			<input type="radio" id = "choice" name="question2" value="Moscow"> Moscow
+			<input type="radio" id = "choice" name="question2" value="Saint Petersburg"> Saint Petersburg 
+			<input type="radio" id = "choice" name="question2" value="Kazan"> Kazan 
+        	<br>
+        	<br>
+        	<br>
+		<p>3.  It is called The Oasis of Luxury in Persia, located in UAE this city is known for its amazing Palm-shape Islands, mega tall skyscraper The Burj Khalifa and the playground for the wealthiest rich people.</p>
+			<input type="radio" id = "choice" name="question3" value="Abu Dhabi"> Abu Dhabi
+			<input type="radio" id = "choice" name="question3" value="Dubai"> Dubai
+			<input type="radio" id = "choice" name="question3" value="Jebel Ali"> Jebel Ali
+			<input type="radio" id = "choice" name="question3" value="Sharjah"> Sharjah
+        	<br>
+        	<br>
+        	<br>
+		<p>4.  This city is in U.K, home of the clock tower "Big Ben", where Sherlock Holmes lives, and also has a giant ferris wheel called The _____ Eye.</p>
+			<input type="radio" id = "choice" name="question4" value="Manchester"> Manchester
+			<input type="radio" id = "choice" name="question4" value="Birmingham"> Birmingham
+			<input type="radio" id = "choice" name="question4" value="Glassgow"> Glassgow
+			<input type="radio" id = "choice" name="question4" value="London"> London
+			<br>
+			<br>
+			<br>
+		<p>5.  Locals call this place in New Zealand the City of Sails, you can walk to the top of a bridge and bungy jump off it.</p>
+			<input type="radio" id = "choice" name="question5" value="Wellington">Wellington
+			<input type="radio" id = "choice" name="question5" value="Auckland">Auckland
+			<input type="radio" id = "choice" name="question5" value="Christchurch">Christchurch
+			<input type="radio" id = "choice" name="question5" value="Hamilton">Hamilton
+			<br>
+			<br>
+			<br>
+		<p>6.  It is the 4th largest city in USA, but the largest city in Texas, home of the Texans, Dynamo, Astros, and Rockets</p>
+			<input type="radio" id = "choice" name="question6" value="Austin">Austin
+			<input type="radio" id = "choice" name="question6" value="Arlington">Arlington
+			<input type="radio" id = "choice" name="question6" value="Houston">Houston
+			<input type="radio" id = "choice" name="questionc" value="Katy">Katy
+			<br>
+			<br>
+			<br>
+		<p>7.  This city is the Capital of Netherlands and has beautiful colorfull houses along its many river's, also an iconic landmark is the EYE Film Institute building.</p>
+			<input type="radio" id = "choice" name="question7" value="Rotterdam">Rotterdam
+			<input type="radio" id = "choice" name="question7" value="Leiden">Leiden
+			<input type="radio" id = "choice" name="question7" value="Amersfoort">Amersfoort
+			<input type="radio" id = "choice" name="question7" value="Amsterdam">Amsterdam
+			<br>
+			<br>
+			<input id="button" type="button" value="Check answers!!!" onclick="check();">
+
+	</form>
+</div>
+   
+
+   <!-- add new divs id's to customize in .js -->
+<div id = "complete">
+
+		<p id = "message"></p>
+
+		<p id = "question-correct"></p>
+
+		<img id = "picture">
+
+</div>
+
+
+</body>
+</html>
